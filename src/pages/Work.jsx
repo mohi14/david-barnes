@@ -1,8 +1,9 @@
 import React from 'react'
+import WorkInner from '../components/Work/WorkInner'
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <div><WorkInner /></div>
   )
 }
 

@@ -8,7 +8,7 @@ import gallery6 from '../../assets/gallery6.svg';
 
 const Gallery = () => {
     return (
-        <div className='px-10 pb-16 text-center '>
+        <div className='px-10 pb-16 text-center relative z-50 '>
             <img className='mx-auto mb-[268px]' src={gallery1} alt="" />
             <div className='flex flex-start gap-4 justify-between mb-[176px]'>
                 <img src={gallery2} alt="" />

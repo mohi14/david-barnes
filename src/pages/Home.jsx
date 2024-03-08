@@ -1,9 +1,10 @@
 import React from 'react'
 import Gallery from '../components/Home/Gallery'
+import Banner from '../components/Home/Banner'
 
 const Home = () => {
   return (
-    <div><Gallery /></div>
+    <div><Banner /><Gallery /></div>
   )
 }
 
