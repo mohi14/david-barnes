@@ -1,8 +1,14 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
+import email from '../assets/email.svg'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='p-10 border-t border-black text-2xl font-semibold flex items-center gap-4 justify-between'>
+      <a className='flex items-center gap-5' href="mailto:tdavidbarnes@gmail.com"><img src={email} alt="" /> tdavidbarnes@gmail.com</a>
+
+      <p>© 2024 David Barnes </p>
+      <Link to="#">Awards</Link>
+    </div>
   )
 }
 
