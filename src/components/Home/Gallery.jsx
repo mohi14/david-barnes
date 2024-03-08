@@ -22,7 +22,7 @@ const Gallery = () => {
                 <img src={gallery5} alt="" />
                 <img className='mt-[528px]' src={gallery6} alt="" />
             </div>
-            <Link to="#" className='text-5xl font-semibold'>View Projects</Link>
+            <Link to="/work" className='text-5xl font-semibold'>View Projects</Link>
 
 
         </div>
