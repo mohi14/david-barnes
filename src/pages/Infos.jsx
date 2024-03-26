@@ -20,7 +20,7 @@ const Infos = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="max-w-[1449px] m-auto">
+    <div className="max-w-[1449px] m-auto px-[10px]">
       <InfoBanner />
       <InfoGrid />
       <Connect />
