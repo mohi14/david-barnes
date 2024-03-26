@@ -1,37 +1,68 @@
 import React from 'react';
-import tank from "../../assets/tank.svg"
-import brazil from "../../assets/brazil.svg"
-import vitamix from "../../assets/vitamix.svg"
-import herstyle from "../../assets/herstyle.svg"
-import ab from "../../assets/ab.svg"
+import ccua from "../../assets/ccua.svg"
+import vitamix from "../../assets/vitamixNew.svg"
+import lifeBrand from "../../assets/lifeBand.svg"
+import modern from "../../assets/morderSolution.svg"
+import scotts from "../../assets/scotts.svg"
+import revera from "../../assets/scotts.svg"
+import hershey from "../../assets/hershey.svg"
+import edit from "../../assets/edit.svg"
+import muskoka from "../../assets/Muskoka.svg"
+import { Link } from 'react-router-dom';
 
 const WorkInner = () => {
     const details = [
         {
-            pic: tank,
-            title: "TANK HOUSE GENERAL"
-        },
-        {
-            pic: brazil,
-            title: "BRAZILIANO"
+            pic: ccua,
+            title: "CCUA",
+            path: "ccua"
         },
         {
             pic: vitamix,
-            title: "VITAMIX"
+            title: "VITAMIX",
+            path: "vitamix"
         },
         {
-            pic: herstyle,
-            title: "HERSHEYS S’MORES"
+            pic: lifeBrand,
+            title: "LIFE BRAND",
+            path: "life-brand"
         },
         {
-            pic: ab,
-            title: "ABERB"
+            pic: modern,
+            title: "MODERN SOLUTION",
+            path: "modern-solution"
+        },
+        {
+            pic: scotts,
+            title: "SCOTTS MIRACLE GROW",
+            path: "scotts-miracle-grow"
+        },
+        {
+            pic: revera,
+            title: "REVERA LIVING",
+            path: "revera-living"
+        },
+        {
+            pic: hershey,
+            title: "HERSHEY'S MORES",
+            path: "hersheys-mores"
+        },
+        {
+            pic: edit,
+            title: "EDIT",
+            path: "edit"
+        },
+        {
+            pic: muskoka,
+            title: "MUSKOKA GROWN",
+            path: "muskoka-grown"
         },
     ]
     return (
-        <div className='flex flex-col gap-[51px] my-[262px] px-10 relative'>
+        <div className='flex flex-col gap-[51px] my-[140px] px-10 relative'>
             {
-                details.map((data, index) => <div className='flex items-center gap-10 text-[#808080]' key={index}><p className='text-[64px] font-bold'>{data.title}</p> <img src={data.pic} alt="" /></div>)
+                details.map((data, index) => <Link key={index} to={`/project-details/${data.path}`}>
+                    <div className='flex items-center gap-10 text-[#808080] cursor-pointer hover:scale-105 hover:px-10' ><p className='text-[64px] font-bold'>{data.title}</p> <img src={data.pic} alt="" /></div></Link>)
             }
         </div>
     );
