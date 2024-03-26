@@ -1,6 +1,8 @@
 import mailIcon from "../assets/mailIcon.svg"
 import person from "../assets/person.svg"
+import InfoGrid from "../components/Info/InfoGrid"
 import InfoBanner from "../components/Info/InfoBanner"
+import Connect from "../components/Info/Connect"
 
 const Infos = () => {
   return (
@@ -20,6 +22,8 @@ const Infos = () => {
     // </div>
     <div className="max-w-[1449px] m-auto">
       <InfoBanner />
+      <InfoGrid />
+      <Connect />
     </div>
   )
 }
