@@ -50,6 +50,40 @@ body {
     width: 100%;
 }
 
+.linkItem {
+    position: relative;
+}
+
+.linkItem::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.linkItem:hover::after {
+    width: 100%;
+}
+
+.linkItemActive {
+    position: relative;
+}
+
+.linkItemActive::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+
+}
+
 @media screen and (max-width: 1024px) {
     .headerText {
         font-size: 24px !important;

@@ -27,7 +27,7 @@ const ProjectDetails = () => {
                     {media.type === "image" && <img src={media.content} className={`projectDetailsImage ${idx === details.media.length - 1 ? "lg:max-w-[1147px]" : " lg:max-w-[907px]"}`} />}
                 </div>)}
             </div>
-            <p className="text-black text-2xl md:text-3xl lg:text-[48px] font-[600] leading-[140%] lg:tracking-[-2.4px] text-center mb-[64px] cursor-pointer"><Link>View Projects</Link></p>
+            <p className="text-black text-2xl md:text-3xl lg:text-[48px] font-[600] leading-[140%] lg:tracking-[-2.4px] text-center mb-[64px] cursor-pointer"><Link className='linkItem'>View Projects</Link></p>
         </div >
     );
 };
