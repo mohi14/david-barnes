@@ -44,8 +44,8 @@ const WorkInner = () => {
         },
         {
             pic: hershey,
-            title: "HERSHEY'S MORES",
-            path: "hersheys-mores"
+            title: "HERSHEY'S S'MORES",
+            path: "hersheys-smores"
         },
         {
             pic: edit,
@@ -62,7 +62,7 @@ const WorkInner = () => {
         <div className='flex flex-col gap-[51px] my-[50px] md:my-[80px] lg:my-[140px] px-10 relative'>
             {
                 details.map((data, index) => <Link key={index} to={`/project-details/${data.path}`}>
-                    <div className='flex items-center gap-10 text-[#808080] cursor-pointer hover:scale-105 hover:px-10' ><p className='md:text-[32px] lg:text-[64px] font-bold'>{data.title}</p> <img src={data.pic} alt="" /></div></Link>)
+                    <div className='flex items-center gap-10 text-[#808080] cursor-pointer transition-all hover:scale-105 hover:px-10' ><p className='md:text-[32px] lg:text-[64px] font-bold'>{data.title}</p> <img src={data.pic} alt="" /></div></Link>)
             }
         </div>
     );

@@ -34,6 +34,22 @@ body {
 
 }
 
+.projectMedias img {
+    max-width: 620px;
+}
+
+.projectMedias:nth-of-type(odd) {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.projectMedias:nth-of-type(even) {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
     .headerText {
         font-size: 24px !important;
@@ -41,5 +57,25 @@ body {
 
     .linkText {
         font-size: 18px !important;
+    }
+
+    .projectDetailsTitle {
+        font-size: 105px !important;
+    }
+
+    .projectDetailsImage {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .projectDetailsTitle {
+        font-size: 85px !important;
+    }
+}
+
+@media only screen and (max-width:688px) {
+    .projectDetailsTitle {
+        font-size: 45px !important;
     }
 }
